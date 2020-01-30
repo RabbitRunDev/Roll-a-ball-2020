@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     public float speed;
     public Text countText;
     public Text winText;
+    public GameObject prefab;
+    public GameObject[] prefabCount;
 
     private Rigidbody rb;
     private int count;
@@ -19,6 +21,7 @@ public class PlayerController : MonoBehaviour
         count = 0;
         SetCountText();
         winText.text = "";
+        prefabCount = GameObject.FindGameObjectsWithTag("Pickup");
     }
 
     void FixedUpdate()
@@ -45,7 +48,7 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 14)
+        if (count >= prefabCount.Length)
         {
             winText.text = "You Win!";
         }
