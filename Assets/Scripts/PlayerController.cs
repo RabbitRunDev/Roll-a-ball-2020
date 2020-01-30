@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Pickup"))
         {
-            gameObject.SetActive(false);
+            other.gameObject.SetActive(false);
         }
         
     }
