@@ -9,6 +9,7 @@ public class SpawnPickups : MonoBehaviour
     public float radius;
 
     private float angleHandler;
+    
 
     void Start()
     {

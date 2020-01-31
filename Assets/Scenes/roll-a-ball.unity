@@ -941,6 +941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1618751052}
   - component: {fileID: 1618751053}
+  - component: {fileID: 1618751054}
   m_Layer: 0
   m_Name: Pickups
   m_TagString: Untagged
@@ -977,6 +978,21 @@ MonoBehaviour:
   numObjects: 20
   prefab: {fileID: 3915297979156617923, guid: ddccb251733a1be439a56aaf18ccd989, type: 3}
   radius: 8
+--- !u!114 &1618751054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1618751051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36e06707c53e235408db962f82527dc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numObjects: 10
+  prefab: {fileID: 3915297979156617923, guid: ddccb251733a1be439a56aaf18ccd989, type: 3}
+  radius: 5
 --- !u!1 &1729290983
 GameObject:
   m_ObjectHideFlags: 0
